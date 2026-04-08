@@ -1,0 +1,43 @@
+<html><head><title>splash</title>
+</head>
+<style>
+.img{
+  height: 500px;
+  width: 500px;
+
+  border-radius: 100px;
+}
+
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background: linear-gradient(#4acaffe2, #006893e2);
+  }
+</style>
+<body>
+  <img src="logo.jpg" class="img">
+  <br>
+
+  
+
+  
+  
+</body>
+<script>
+  function checkConnection() {
+    if (navigator.onLine) {
+      // If online → go to home page
+      window.location.href = "home.html";
+    } else {
+    window.location.href="offline.html";
+    }
+  }
+
+  // Run when page loads
+  checkConnection();
+  
+  
+  
+</script>
+</html>
